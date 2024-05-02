@@ -9,6 +9,7 @@ module.exports = {
       },
       colors: {
         'cherry-red': '#990011',
+        'red': '#FF0000',
         'off-white': '#FCF6F5',
       },
       fontFamily: {
