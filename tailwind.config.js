@@ -13,7 +13,8 @@ module.exports = {
       },
       fontFamily: {
         dis: 'Courier',
-        display: 'Ubuntu, sans-serif',   
+        display: 'Ubuntu, sans-serif', 
+        disp:'inter',
       }
     },
   },
