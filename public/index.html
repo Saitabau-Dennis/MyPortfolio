@@ -15,7 +15,7 @@
             <svg id="hexagon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" class="w-full h-full block mx-auto fill-current">
                 <g fill="#111">
-                    <text id="S" transform="translate(36, 33)" fill="#FCF6F5" style="opacity: 0"
+                    <text id="S" transform="translate(29, 55)" fill="#FCF6F5" style="opacity: 0"
                         font-family="system-ui,Calibre-Medium, Calibre,sans-serif" font-size="50" font-weight="400"
                         letter-spacing="4.16666603">
                         <tspan x="0.141666985" y="33">S</tspan>
@@ -32,34 +32,32 @@
     </div>
     <main class="flex-grow flex h-screen">
         <aside class=" p-4 flex flex-col w-1/2 h-screen sticky top-0">
-            <div class="pt-20 pl-40  justify-start text-left">
+            <div class="pt-20 pl-36  justify-start text-left">
                 <h1 class="text-white space-y-2 text-5xl font-disp font-bold">Saitabau Dennis</h1>
                 <h2 class="text-crimson-red text-lg mt-2  font-bold font-display">Full Stack Developer</h2>
                 <p class="text-white text-s leading-relaxed mt-2 font-disp">
-                    Versatile full stack developer <br> building dynamic web applications.
+                    Versatile Full Stack Developer <br> building dynamic web applications.
                 </p>
             </div>
-            <div class="pt-16 pl-40  space-y-4 text-white text-xs justify-start text-left font-dis font-semibold">
-                <div class="text-white hover:text-crimson-red"><a href="#about"><i class="fas fa-minus mr-4"></i>ABOUT</a></div>
-                <div class="text-white hover:text-crimson-red"><a href="#experience"><i class="fas fa-minus mr-4"></i>EXPERIENCE</a></div>
-                <div class="text-white hover:text-crimson-red"><a href="#projects"><i class="fas fa-minus mr-4"></i>PROJECTS</a></div>
+            <div class="pt-16 pl-36  space-y-4 text-white text-xs justify-start text-left font-dis font-semibold">
+                <div class="text-white"><a href="#about">ABOUT</a></div>
+                <div class="text-white"><a href="#experience">EXPERIENCE</a></div>
+                <div class="text-white "><a href="#projects">PROJECTS</a></div>
             </div>
-            <div class="mt-auto flex justify-start space-x-7 text-left pb-20 pl-40">
+            <div class="mt-auto flex justify-start space-x-7 text-left pb-28 pl-36">
                 <a href=" #"><i class="fab fa-instagram text-white  text-2xl"></i></a>
-                <a href="https://github.com/Saitabau-Dennis"><i
-                        class="fab fa-github text-white text-2xl"></i></a>
+                <a href="https://github.com/Saitabau-Dennis"><i class="fab fa-github text-white text-2xl"></i></a>
                 <a href="#"><i class="fab fa-twitter text-white text-2xl"></i></a>
                 <a href="https://www.linkedin.com/in/saitabau-dennis-115133280"><i
                         class="fab fa-linkedin text-white text-2xl"></i></a>
-                <a href="mailto:dennisntete28@gmail.com"><i
-                        class="fas fa-envelope text-white text-2xl"></i></a>
-                <a href="https://codepen.io/dennis-ntete"><i
-                        class="fab fa-codepen text-white text-2xl"></i></a>
+                <a href="https://codepen.io/dennis-ntete"><i class="fab fa-codepen text-white text-2xl"></i></a>
+                <a href="mailto:dennisntete28@gmail.com"><i class="fas fa-envelope text-white text-2xl"></i></a>
+
             </div>
         </aside>
 
         <div class="flex-1 overflow-auto">
-            <div class=" flex-col justify-center text-left font-disp text-white pt-24 pr-32" id="about">
+            <div class=" flex-col justify-center text-left font-disp text-white pt-28 pr-32" id="about">
                 <p class="mb-4">I'm a full stack developer driven by a deep passion
                     for crafting exceptional digital
                     experiences.
@@ -79,11 +77,23 @@
                 above - not just for technical prowess, but for their ability to connect with users on a human
                 level.
                 </p>
-                <button class="mt-4 bg-crimson-red text-white font-bold py-2 px-4 rounded">
+                <button class=" mt-4 bg-crimson-red text-white font-bold py-2 px-4 rounded">
                     RESUME
                 </button>
             </div>
-            
+            <div class="">
+                <div class="">
+                    <img src="./public/Assets/capstone.png" alt="img">
+                </div>
+                <!--<div class="text pt-10 text-white text-left p-20">
+                    <p> The greatest satisfaction comes from
+                        transforming raw ideas into products that not only work flawlessly but also delight and simplify
+                        user journeys. In a world overflowing with digital experiences, I strive to create those that
+                        rise
+                        above - not just for technical prowess, but for their ability to connect with users on a human
+                        level.</p>
+                </div>-->
+            </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
     <script>
@@ -105,14 +115,15 @@
             .add({
                 targets: '#hexagon #S',
                 duration: 1000,
-                opacity: 1,
+                opacity: 0,
                 easing: 'easeInOutQuart',
                 complete: function () {
                     // Stop the animation loop
-                    anim.pause(); 
+                    anim.pause();
                     // Hide the loader and show the main content
                     document.getElementById('loader').style.display = 'none';
                     document.querySelector('main').style.display = 'flex';
+                    console.log("all animations completed")
                 }
             });
     </script>
