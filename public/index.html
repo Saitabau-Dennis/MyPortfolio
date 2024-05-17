@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Saitabau</title>
+    <link src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -15,7 +16,7 @@
             <svg id="hexagon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" class="w-full h-full block mx-auto fill-current">
                 <g fill="#111">
-                    <text id="S" transform="translate(29, 55)" fill="#FCF6F5" style="opacity: 0"
+                    <text id="S" transform="translate(36,33)" fill="#FCF6F5" style="opacity: 0"
                         font-family="system-ui,Calibre-Medium, Calibre,sans-serif" font-size="50" font-weight="400"
                         letter-spacing="4.16666603">
                         <tspan x="0.141666985" y="33">S</tspan>
@@ -81,52 +82,13 @@
                     RESUME
                 </button>
             </div>
-            <div class="">
-                <div class="">
-                    <img src="./Assets/capstone.png" alt="img">
-                </div>
-                <!--<div class="text pt-10 text-white text-left p-20">
-                    <p> The greatest satisfaction comes from
-                        transforming raw ideas into products that not only work flawlessly but also delight and simplify
-                        user journeys. In a world overflowing with digital experiences, I strive to create those that
-                        rise
-                        above - not just for technical prowess, but for their ability to connect with users on a human
-                        level.</p>
-                </div>-->
+            <div class="flex justify-center">
+                <img src="" alt="img" class="w-1/2 h-1/2">
             </div>
+        </div>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script>
-        const anim = anime.timeline({
-            loop: true,
-            direction: 'alternate'
-        });
-
-        anim
-            .add({
-                targets: '#hexagon path',
-                strokeDashoffset: [anime.setDashoffset, 0],
-                easing: 'easeInOutQuart',
-                duration: 2000,
-                delay: function (el, i) {
-                    return i * 250;
-                },
-            })
-            .add({
-                targets: '#hexagon #S',
-                duration: 1000,
-                opacity: 0,
-                easing: 'easeInOutQuart',
-                complete: function () {
-                    // Stop the animation loop
-                    anim.pause();
-                    // Hide the loader and show the main content
-                    document.getElementById('loader').style.display = 'none';
-                    document.querySelector('main').style.display = 'flex';
-                    console.log("all animations completed")
-                }
-            });
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
