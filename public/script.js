@@ -27,3 +27,5 @@ anim
             console.log("all animations completed")
         }
     });
+
+    
