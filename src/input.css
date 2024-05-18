@@ -39,3 +39,24 @@ svg {
   margin: 0 auto;
   fill: none;
 }
+.animated-button {
+  transition: all 0.3s ease-in-out;
+  animation: pulse 2s infinite;
+}
+
+.animated-button:hover {
+  transform: scale(1.1);
+  background-color: #ff6347;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
